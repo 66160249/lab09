@@ -1,24 +1,152 @@
+/* ตั้งค่าพื้นฐาน */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* กล่องเนื้อหา */
 .container {
+    width: 90%;
     max-width: 600px;
-    margin: auto;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-button {
-    background: blue;
-    color: white;
+/* หัวข้อหลัก */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* รายชื่อผู้ใช้ */
+#user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+#user-list a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
     padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#user-list a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* ปุ่ม */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ปุ่มกลับ */
+.back-button {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* รายละเอียดผู้ใช้ */
+#user-detail {
+    text-align: left;
+    margin-top: 15px;
+}
+
+#user-detail h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+#user-detail p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* โพสต์ของผู้ใช้ */
+.posts-list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.posts-list h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.posts-list p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* ปุ่มดูความคิดเห็น */
+.view-comments {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-comments:hover {
+    background-color: #218838;
+}
+
+/* ความคิดเห็น */
+.comment-section {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.comment-section p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.comment-section strong {
+    font-weight: bold;
+    color: #000;
 }
